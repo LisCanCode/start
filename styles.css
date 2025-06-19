@@ -1,0 +1,86 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.auth-box, .task-box {
+    margin-top: 20px;
+}
+h2 {
+    color: #555;
+    margin: 10px 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+button {
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background: #0056b3;
+}
+p#message {
+    color: #d9534f;
+    margin-top: 10px;
+}
+ul#taskList {
+    list-style: none;
+    text-align: left;
+}
+ul#taskList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul#taskList li a {
+    color: #d9534f;
+    text-decoration: none;
+}
+ul#taskList li a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    input, button {
+        font-size: 14px;
+    }
+}
