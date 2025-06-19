@@ -1,9 +1,8 @@
-<!-- config.php -->
 <?php
-$host = 'localhost'; // Update with your DB host
-$dbname = 'taskysaas'; // Update with your DB name
-$username = 'root'; // Update with your DB username
-$password = ''; // Update with your DB password
+$host = getenv('DB_HOST') ?: 'localhost';
+$dbname = getenv('DB_NAME') ?: 'taskysaas';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASS') ?: '';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
